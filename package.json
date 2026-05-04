@@ -1,0 +1,50 @@
+{
+  "name": "fetchflow",
+  "version": "1.0.0",
+  "description": "Lightweight React data-fetching utility with caching, retry, and deduplication.",
+  "main": "dist/fetchflow.umd.js",
+  "module": "dist/fetchflow.es.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "data-fetching",
+    "api",
+    "fetch",
+    "react-query",
+    "cache",
+    "retry",
+    "loader"
+  ],
+  "author": "DevCodeSpace",
+  "license": "MIT",
+  "homepage": "https://github.com/DevCodeSpace/fetchflow#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevCodeSpace/fetchflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevCodeSpace/fetchflow/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/fetchflow.es.js",
+      "require": "./dist/fetchflow.umd.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
+}
