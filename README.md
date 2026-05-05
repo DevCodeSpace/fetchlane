@@ -1,4 +1,4 @@
-# 🚀 FetchFlow
+# 🚀 FetchLane
 
 **Lightweight React data-fetching utility with caching, retry, and request deduplication.**
 
@@ -9,7 +9,7 @@ Simplify API handling in your React apps — no more repetitive loading, error, 
 ## 📦 Installation
 
 ```bash
-npm install fetchflow
+npm install fetchlane
 ```
 
 ---
@@ -17,31 +17,29 @@ npm install fetchflow
 ## ⚡ Quick Usage
 
 ```jsx
-import { SmartLoader } from "fetchflow";
+import { SmartLoader } from "fetchlane";
 
 const getUser = async () => {
   const res = await fetch("/api/user");
   return res.json();
 };
 
-<SmartLoader api={getUser}>
-  {(data) => <UserCard user={data} />}
-</SmartLoader>;
+<SmartLoader api={getUser}>{(data) => <UserCard user={data} />}</SmartLoader>;
 ```
 
 ---
 
 ## ✨ Features
 
-* 🔄 Automatic API execution
-* ⏳ Built-in loading state
-* ❌ Flexible error handling
-* ⚡ Smart caching with TTL
-* 🔁 Retry failed requests
-* 🚫 Request deduplication (no duplicate API calls)
-* ⏱️ Optional loading delay (better UX)
-* 🐛 Debug mode for development
-* 🎯 Clean and minimal API
+- 🔄 Automatic API execution
+- ⏳ Built-in loading state
+- ❌ Flexible error handling
+- ⚡ Smart caching with TTL
+- 🔁 Retry failed requests
+- 🚫 Request deduplication (no duplicate API calls)
+- ⏱️ Optional loading delay (better UX)
+- 🐛 Debug mode for development
+- 🎯 Clean and minimal API
 
 ---
 
@@ -62,7 +60,7 @@ const getUser = async () => {
 ## 🛠️ Hook Usage
 
 ```jsx
-import { useSmartLoader } from "fetchflow";
+import { useSmartLoader } from "fetchlane";
 
 const { data, loading, error, refetch } = useSmartLoader(getUser, {
   cache: true,
@@ -106,20 +104,19 @@ Return Data
 
 ---
 
-
 ## 🎯 When to Use
 
-Use FetchFlow when you want:
+Use FetchLane when you want:
 
-* Simple API handling without heavy libraries
-* Lightweight alternative to React Query
-* Clean and readable code
+- Simple API handling without heavy libraries
+- Lightweight alternative to React Query
+- Clean and readable code
 
 ---
 
 ## 📄 License
 
-MIT © 2026 FetchFlow Contributors
+MIT © 2026 FetchLane Contributors
 
 ---
 

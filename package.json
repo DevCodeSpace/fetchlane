@@ -1,9 +1,9 @@
 {
-  "name": "fetchflow",
+  "name": "fetchlane",
   "version": "1.0.0",
   "description": "Lightweight React data-fetching utility with caching, retry, and deduplication.",
-  "main": "dist/fetchflow.umd.js",
-  "module": "dist/fetchflow.es.js",
+  "main": "dist/fetchlane.umd.js",
+  "module": "dist/fetchlane.es.js",
   "types": "index.d.ts",
   "files": [
     "dist",
@@ -27,18 +27,18 @@
   ],
   "author": "DevCodeSpace",
   "license": "MIT",
-  "homepage": "https://github.com/DevCodeSpace/fetchflow#readme",
+  "homepage": "https://github.com/DevCodeSpace/fetchlane#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DevCodeSpace/fetchflow.git"
+    "url": "https://github.com/DevCodeSpace/fetchlane.git"
   },
   "bugs": {
-    "url": "https://github.com/DevCodeSpace/fetchflow/issues"
+    "url": "https://github.com/DevCodeSpace/fetchlane/issues"
   },
   "exports": {
     ".": {
-      "import": "./dist/fetchflow.es.js",
-      "require": "./dist/fetchflow.umd.js"
+      "import": "./dist/fetchlane.es.js",
+      "require": "./dist/fetchlane.umd.js"
     }
   },
   "peerDependencies": {

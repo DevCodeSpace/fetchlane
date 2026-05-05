@@ -4,9 +4,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.js",
-      name: "FetchFlow",
+      name: "FetchLane",
       formats: ["es", "umd"],
-      fileName: (format) => `fetchflow.${format}.js`,
+      fileName: (format) => `fetchlane.${format}.js`,
     },
     rollupOptions: {
       external: ["react"],
